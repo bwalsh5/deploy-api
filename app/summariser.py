@@ -3,7 +3,8 @@ import os
 import openai
 
 # You will need to get your API key from https://platform.openai.com/account/api-keys
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 
 # Got this function from this amazing course https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/
